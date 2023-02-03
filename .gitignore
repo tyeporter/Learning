@@ -4,5 +4,11 @@
 # iOS
 Pods
 
+# Java
+.mvn
+*.jar
+WozU-SDET/**/target
+.settings
+
 # Node
 node_modules
