@@ -1,0 +1,510 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9CAD073AFE4AB53DFC6BB27F /* Pods_FireChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BFFD495C3828AB2BC4E06EA /* Pods_FireChat.framework */; };
+		B013D3FD21F6BABE00D7D468 /* Composer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B013D3FC21F6BABE00D7D468 /* Composer.swift */; };
+		B013D3FF21F9688500D7D468 /* Messages.swift in Sources */ = {isa = PBXBuildFile; fileRef = B013D3FE21F9688500D7D468 /* Messages.swift */; };
+		B081AE8A21FEEFD6002D00D8 /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B081AE8921FEEFD6002D00D8 /* MessageCell.swift */; };
+		B088D93121E71528001960B9 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B088D93021E71528001960B9 /* Extensions.swift */; };
+		B088D93421E737A7001960B9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B088D93321E737A6001960B9 /* GoogleService-Info.plist */; };
+		B09802F821E702EF002069CD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09802F721E702EF002069CD /* AppDelegate.swift */; };
+		B09802FA21E702EF002069CD /* ChatsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09802F921E702EF002069CD /* ChatsController.swift */; };
+		B09802FF21E702F3002069CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B09802FE21E702F3002069CD /* Assets.xcassets */; };
+		B098030221E702F3002069CD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B098030021E702F3002069CD /* LaunchScreen.storyboard */; };
+		B0F4E51B21F55C290037FC7B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F4E51A21F55C290037FC7B /* User.swift */; };
+		B0F4E51E21F69F280037FC7B /* ChatLogController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F4E51D21F69F280037FC7B /* ChatLogController.swift */; };
+		ECB663AA25495A112EFC733D /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB66678AC1F0DA325DA4207 /* LoginController.swift */; };
+		ECB6669199CEEA1E3B7988D2 /* SignupController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB66A57408204F930EC553C /* SignupController.swift */; };
+		ECB66898832A81B93302210F /* NewMessageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB6696AE142CD432E9E1166 /* NewMessageController.swift */; };
+		ECB669E2AE77E240481F2F17 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB663DD9DDFFA626097FBC1 /* UserCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2426AF90F34E67AA198FA514 /* Pods-FireChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FireChat.debug.xcconfig"; path = "Target Support Files/Pods-FireChat/Pods-FireChat.debug.xcconfig"; sourceTree = "<group>"; };
+		7BFFD495C3828AB2BC4E06EA /* Pods_FireChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FireChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F458A46CA1260E375D9570B /* Pods-FireChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FireChat.release.xcconfig"; path = "Target Support Files/Pods-FireChat/Pods-FireChat.release.xcconfig"; sourceTree = "<group>"; };
+		B013D3FC21F6BABE00D7D468 /* Composer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Composer.swift; sourceTree = "<group>"; };
+		B013D3FE21F9688500D7D468 /* Messages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Messages.swift; sourceTree = "<group>"; };
+		B081AE8921FEEFD6002D00D8 /* MessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
+		B088D93021E71528001960B9 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		B088D93321E737A6001960B9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B09802F421E702EF002069CD /* FireChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FireChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B09802F721E702EF002069CD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B09802F921E702EF002069CD /* ChatsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatsController.swift; sourceTree = "<group>"; };
+		B09802FE21E702F3002069CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B098030121E702F3002069CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B098030321E702F3002069CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B0F4E51A21F55C290037FC7B /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		B0F4E51D21F69F280037FC7B /* ChatLogController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatLogController.swift; sourceTree = "<group>"; };
+		ECB663DD9DDFFA626097FBC1 /* UserCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
+		ECB66678AC1F0DA325DA4207 /* LoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		ECB6696AE142CD432E9E1166 /* NewMessageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewMessageController.swift; sourceTree = "<group>"; };
+		ECB66A57408204F930EC553C /* SignupController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B09802F121E702EF002069CD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CAD073AFE4AB53DFC6BB27F /* Pods_FireChat.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0769828477D68821A40D0BF3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2426AF90F34E67AA198FA514 /* Pods-FireChat.debug.xcconfig */,
+				7F458A46CA1260E375D9570B /* Pods-FireChat.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		2B99D8243C69BB1F90D50B0A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7BFFD495C3828AB2BC4E06EA /* Pods_FireChat.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B088D93221E71545001960B9 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				B088D93021E71528001960B9 /* Extensions.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		B09802EB21E702EF002069CD = {
+			isa = PBXGroup;
+			children = (
+				B09802F621E702EF002069CD /* FireChat */,
+				B09802F521E702EF002069CD /* Products */,
+				0769828477D68821A40D0BF3 /* Pods */,
+				2B99D8243C69BB1F90D50B0A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B09802F521E702EF002069CD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B09802F421E702EF002069CD /* FireChat.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B09802F621E702EF002069CD /* FireChat */ = {
+			isa = PBXGroup;
+			children = (
+				B088D93221E71545001960B9 /* Util */,
+				B09802F721E702EF002069CD /* AppDelegate.swift */,
+				B09802F921E702EF002069CD /* ChatsController.swift */,
+				B09802FE21E702F3002069CD /* Assets.xcassets */,
+				B098030021E702F3002069CD /* LaunchScreen.storyboard */,
+				B098030321E702F3002069CD /* Info.plist */,
+				B088D93321E737A6001960B9 /* GoogleService-Info.plist */,
+				B0F4E51921F55C090037FC7B /*  Models */,
+				ECB66A94F619E198D9CE2BEB /* Controllers */,
+				ECB662BF85E9B99774F0A920 /* Views */,
+			);
+			path = FireChat;
+			sourceTree = "<group>";
+		};
+		B0F4E51921F55C090037FC7B /*  Models */ = {
+			isa = PBXGroup;
+			children = (
+				B0F4E51A21F55C290037FC7B /* User.swift */,
+				B013D3FE21F9688500D7D468 /* Messages.swift */,
+			);
+			path = " Models";
+			sourceTree = "<group>";
+		};
+		B0F4E51C21F69F150037FC7B /* Chat Log */ = {
+			isa = PBXGroup;
+			children = (
+				B0F4E51D21F69F280037FC7B /* ChatLogController.swift */,
+				B013D3FC21F6BABE00D7D468 /* Composer.swift */,
+			);
+			path = "Chat Log";
+			sourceTree = "<group>";
+		};
+		ECB662BF85E9B99774F0A920 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				ECB663DD9DDFFA626097FBC1 /* UserCell.swift */,
+				B081AE8921FEEFD6002D00D8 /* MessageCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		ECB66A94F619E198D9CE2BEB /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B0F4E51C21F69F150037FC7B /* Chat Log */,
+				ECB66F755FF435C0683EC8C7 /* Login - Signup */,
+				ECB66B48B3608FF28AC4D3D6 /* New Message */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		ECB66B48B3608FF28AC4D3D6 /* New Message */ = {
+			isa = PBXGroup;
+			children = (
+				ECB6696AE142CD432E9E1166 /* NewMessageController.swift */,
+			);
+			path = "New Message";
+			sourceTree = "<group>";
+		};
+		ECB66F755FF435C0683EC8C7 /* Login - Signup */ = {
+			isa = PBXGroup;
+			children = (
+				ECB66678AC1F0DA325DA4207 /* LoginController.swift */,
+				ECB66A57408204F930EC553C /* SignupController.swift */,
+			);
+			path = "Login - Signup";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B09802F321E702EF002069CD /* FireChat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B098030621E702F3002069CD /* Build configuration list for PBXNativeTarget "FireChat" */;
+			buildPhases = (
+				E8C9B3E7D6E8BE688267FF47 /* [CP] Check Pods Manifest.lock */,
+				B09802F021E702EF002069CD /* Sources */,
+				B09802F121E702EF002069CD /* Frameworks */,
+				B09802F221E702EF002069CD /* Resources */,
+				FE7B8C777F5B7994D8596744 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FireChat;
+			productName = FireChat;
+			productReference = B09802F421E702EF002069CD /* FireChat.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B09802EC21E702EF002069CD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Tye Porter";
+				TargetAttributes = {
+					B09802F321E702EF002069CD = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = B09802EF21E702EF002069CD /* Build configuration list for PBXProject "FireChat" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B09802EB21E702EF002069CD;
+			productRefGroup = B09802F521E702EF002069CD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B09802F321E702EF002069CD /* FireChat */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B09802F221E702EF002069CD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B098030221E702F3002069CD /* LaunchScreen.storyboard in Resources */,
+				B09802FF21E702F3002069CD /* Assets.xcassets in Resources */,
+				B088D93421E737A7001960B9 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E8C9B3E7D6E8BE688267FF47 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FireChat-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FE7B8C777F5B7994D8596744 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FireChat/Pods-FireChat-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FireChat/Pods-FireChat-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B09802F021E702EF002069CD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0F4E51E21F69F280037FC7B /* ChatLogController.swift in Sources */,
+				B09802FA21E702EF002069CD /* ChatsController.swift in Sources */,
+				B09802F821E702EF002069CD /* AppDelegate.swift in Sources */,
+				B088D93121E71528001960B9 /* Extensions.swift in Sources */,
+				B0F4E51B21F55C290037FC7B /* User.swift in Sources */,
+				B081AE8A21FEEFD6002D00D8 /* MessageCell.swift in Sources */,
+				ECB663AA25495A112EFC733D /* LoginController.swift in Sources */,
+				B013D3FF21F9688500D7D468 /* Messages.swift in Sources */,
+				ECB6669199CEEA1E3B7988D2 /* SignupController.swift in Sources */,
+				B013D3FD21F6BABE00D7D468 /* Composer.swift in Sources */,
+				ECB66898832A81B93302210F /* NewMessageController.swift in Sources */,
+				ECB669E2AE77E240481F2F17 /* UserCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B098030021E702F3002069CD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B098030121E702F3002069CD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B098030421E702F3002069CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B098030521E702F3002069CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B098030721E702F3002069CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2426AF90F34E67AA198FA514 /* Pods-FireChat.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3L2G3E7SM4;
+				INFOPLIST_FILE = FireChat/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.tyeporter.FireChat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B098030821E702F3002069CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7F458A46CA1260E375D9570B /* Pods-FireChat.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3L2G3E7SM4;
+				INFOPLIST_FILE = FireChat/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.tyeporter.FireChat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B09802EF21E702EF002069CD /* Build configuration list for PBXProject "FireChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B098030421E702F3002069CD /* Debug */,
+				B098030521E702F3002069CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B098030621E702F3002069CD /* Build configuration list for PBXNativeTarget "FireChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B098030721E702F3002069CD /* Debug */,
+				B098030821E702F3002069CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B09802EC21E702EF002069CD /* Project object */;
+}
