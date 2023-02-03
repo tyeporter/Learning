@@ -1,0 +1,10 @@
+<app-toaster></app-toaster>
+<app-breadcrumbs [pageTitle]="product$.name"></app-breadcrumbs>
+<section>
+    <app-product-left [imageUrl]="product$.url"></app-product-left>
+    <app-product-right
+        [product]="product$"
+        (addToCartClick)="handleAddToCartClick($event)"
+        (buyNowClick)="handleBuyItNowClick($event)"
+    ></app-product-right>
+</section>

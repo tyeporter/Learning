@@ -1,0 +1,47 @@
+{% layout "layout.liquid" %}
+
+{% block content %}
+<h2>{{ appName }} &#x1F5BC;</h2>
+<p>
+    This application allows users to resizes sample images.
+    You can access the API by going to the <code>/api/images</code> endpoint.
+</p>
+<p>
+    The <code>/api/images</code> endpoint takes following URL parameters:
+    <ul>
+        <li><code>imageName</code> (Required)</li>
+        <li><code>width</code> (Required)</li>
+        <li><code>height</code> (Optional)</li>
+    </ul>
+</p>
+<p>
+    For example, visiting the URL below will resize the sample image <code>santamonica.jpg</code> to a size of <code>200</code> pixels width and <code>300</code> pixels height:
+
+    <br><br>
+    <code>http://localhost:3000/api/images?imageName=santamonica&amp;width=200&amp;height=300</code>
+</p>
+<p>
+    Below are the sample image names you can use:
+    <ul>
+        <li><code>encenadaport</code></li>
+        <li><code>fjord</code></li>
+        <li><code>icelandwaterfall</code></li>
+        <li><code>palmtunnel</code></li>
+        <li><code>santamonica</code></li>
+    </ul>
+</p>
+<hr>
+<h3>Technologies Used In This Project</h3>
+<p>
+    This application was built using the following technologies:
+    <ul>
+        <li>Node.js</li>
+        <li><a href="https://www.npmjs.com/package/express">Express</a></li>
+        <li>TypeScript</li>
+        <li><a href="https://www.npmjs.com/package/sharp">Sharp</a></li>
+        <li><a href="https://www.npmjs.com/package/liquidjs">LiquidJS</a></li>
+    </ul>
+</p>
+
+{% endblock %}
+

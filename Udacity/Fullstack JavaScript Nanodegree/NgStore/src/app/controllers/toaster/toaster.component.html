@@ -1,0 +1,8 @@
+<div class="toaster">
+    <div *ngFor="let notification of notificationQueue$; index as i">
+        <app-toast
+            [notification]="notification"
+            (dispose)="disposeNotification(i)"
+        ></app-toast>
+    </div>
+</div>

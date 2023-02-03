@@ -1,0 +1,20 @@
+.breadcrumbs {
+    display: flex;
+    padding: 0 15px;
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.breadcrumbs {
+    width: 100%;
+}
+
+.breadcrumbs>span>a {
+    text-decoration: none;
+}
+
+.breadcrumbs>span+span:before {
+    margin: 0 10px;
+    content: "\00003E";
+}

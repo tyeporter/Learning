@@ -1,0 +1,6 @@
+<app-toaster></app-toaster>
+<h1>Products</h1>
+<app-products
+    [products]="products$"
+    (addToCartClick)="handleAddToCartClick($event)"
+></app-products>

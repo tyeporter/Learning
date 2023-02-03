@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+
+:root {
+    --primary-background: #ffffff;
+    --primary-accent-background: #f2f2f2;
+    --secondary-background: #0f1017;
+    --secondary-accent-background: #2a2e41;
+    --primary-color: #131b3c;
+    --primary-accent: #7000ec;
+    --primary-danger: #c41a1a;
+    --border-radius: 4px;
+    --border-color: #131b3c;
+    --hover-color: #131b3c;
+}
+
+*,
+html,
+body {
+    box-sizing: border-box;
+}
+
+html,
+body,
+app-root {
+    height: 100%;
+    margin: 0;
+    font-family: 'Montserrat', "Helvetica Neue", sans-serif;
+}

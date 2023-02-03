@@ -1,0 +1,38 @@
+<div class="product-right-content">
+    <div class="content-container">
+        <span class="brand">
+            <h4>ngStore</h4>
+            <span class="icon check">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            </span>
+        </span>
+        <h1>{{product.name}}</h1>
+        <h2>{{product.price | currency}}</h2>
+        <p>{{product.description}}</p>
+        <form>
+            <div class="product-quantity">
+                <label for="quantity"><small>Quantity</small></label>
+                <input
+                    id="quantity"
+                    type="number"
+                    name="quantity"
+                    value="1"
+                    min="1"
+                    max="100"
+                    [(ngModel)]="quantity">
+            </div>
+            <div class="product-actions">
+                <button
+                    id="add-to-cart"
+                    (click)="handleAddToCartClick(product)">
+                    Add to Cart
+                </button>
+                <button
+                    id="buy-it-now"
+                    (click)="handleBuyItNowClick(product)">
+                    Buy it Now
+                </button>
+            </div>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,139 @@
+<form #form="ngForm" (ngSubmit)="submitForm()">
+    <h3>Checkout</h3>
+    <div class="form-contact">
+        <h4>Personal Information</h4>
+        <div class="input-group">
+            <div>
+                <small *ngIf="formControls.firstName.error" class="error-message">Please use valid first name</small>
+                <label [class.invalid]="formControls.firstName.error">
+                    <small>First Name</small>
+                    <input type="text" name="firstName" placeholder="Happy" [(ngModel)]="formControls.firstName.value" #firstName="ngModel" [ngModelOptions]="{updateOn: 'blur'}" (ngModelChange)="validateInput($event, 'firstName')" required maxlength="16" pattern="\b([A-Za-z][-,a-z. ']+[ ]*)+">
+                </label>
+            </div>
+            <div>
+                <small *ngIf="formControls.lastName.error" class="error-message">Please use valid last name</small>
+                <label [class.invalid]="formControls.lastName.error">
+                    <small>Last Name</small>
+                    <input type="text" name="lastName" placeholder="Buyer" [(ngModel)]="formControls.lastName.value" #lastName="ngModel" [ngModelOptions]="{updateOn: 'blur'}" (ngModelChange)="validateInput($event, 'lastName')" required maxlength="16" pattern="\b([A-Za-z][-,a-z. ']+[ ]*)+">
+                </label>
+            </div>
+        </div>
+        <div>
+            <small *ngIf="formControls.streetAddress.error" class="error-message">Street address is invalid</small>
+            <label [class.invalid]="formControls.streetAddress.error">
+                <small>Street Address</small>
+                <input type="text" name="streetAddress" placeholder="1234 Ng Road" [(ngModel)]="formControls.streetAddress.value" #streetAddress="ngModel" [ngModelOptions]="{updateOn: 'blur'}" (ngModelChange)="validateInput($event, 'streetAddress')" required minlength="2" maxlength="50" pattern="^\s*\S+(?:\s+\S+){2}">
+            </label>
+        </div>
+        <div>
+            <small *ngIf="formControls.addressUnit.error" class="error-message">Address unit is invalid</small>
+            <label [class.invalid]="formControls.addressUnit.error">
+                <small>Apartment, Suite, Unit, etc. (optional)</small>
+                <input type="text" name="addressUnit" placeholder="Unit 4200" [(ngModel)]="formControls.addressUnit.value" #addressUnit="ngModel" maxlength="16" (ngModelChange)="validateInput($event, 'addressUnit')">
+            </label>
+        </div>
+        <div>
+            <small *ngIf="formControls.city.error" class="error-message">City is invalid</small>
+            <label [class.invalid]="formControls.city.error">
+                <small>City</small>
+                <input type="text" name="city" placeholder="San Francisco" [(ngModel)]="formControls.city.value" #city="ngModel" [ngModelOptions]="{updateOn: 'blur'}" (ngModelChange)="validateInput($event, 'city')" required minlength="2" maxlength="16" pattern="^[a-zA-Z][a-zA-Z\s-]+[a-zA-Z]$">
+            </label>
+        </div>
+        <div class="input-group">
+            <label>
+                <small>State</small>
+                <select >
+                    <option value="AL">Alabama</option>
+                    <option value="AK">Alaska</option>
+                    <option value="AZ">Arizona</option>
+                    <option value="AR">Arkansas</option>
+                    <option value="CA" selected>California</option>
+                    <option value="CO">Colorado</option>
+                    <option value="CT">Connecticut</option>
+                    <option value="DE">Delaware</option>
+                    <option value="DC">District Of Columbia</option>
+                    <option value="FL">Florida</option>
+                    <option value="GA">Georgia</option>
+                    <option value="HI">Hawaii</option>
+                    <option value="ID">Idaho</option>
+                    <option value="IL">Illinois</option>
+                    <option value="IN">Indiana</option>
+                    <option value="IA">Iowa</option>
+                    <option value="KS">Kansas</option>
+                    <option value="KY">Kentucky</option>
+                    <option value="LA">Louisiana</option>
+                    <option value="ME">Maine</option>
+                    <option value="MD">Maryland</option>
+                    <option value="MA">Massachusetts</option>
+                    <option value="MI">Michigan</option>
+                    <option value="MN">Minnesota</option>
+                    <option value="MS">Mississippi</option>
+                    <option value="MO">Missouri</option>
+                    <option value="MT">Montana</option>
+                    <option value="NE">Nebraska</option>
+                    <option value="NV">Nevada</option>
+                    <option value="NH">New Hampshire</option>
+                    <option value="NJ">New Jersey</option>
+                    <option value="NM">New Mexico</option>
+                    <option value="NY">New York</option>
+                    <option value="NC">North Carolina</option>
+                    <option value="ND">North Dakota</option>
+                    <option value="OH">Ohio</option>
+                    <option value="OK">Oklahoma</option>
+                    <option value="OR">Oregon</option>
+                    <option value="PA">Pennsylvania</option>
+                    <option value="RI">Rhode Island</option>
+                    <option value="SC">South Carolina</option>
+                    <option value="SD">South Dakota</option>
+                    <option value="TN">Tennessee</option>
+                    <option value="TX">Texas</option>
+                    <option value="UT">Utah</option>
+                    <option value="VT">Vermont</option>
+                    <option value="VA">Virginia</option>
+                    <option value="WA">Washington</option>
+                    <option value="WV">West Virginia</option>
+                    <option value="WI">Wisconsin</option>
+                    <option value="WY">Wyoming</option>
+                </select>
+            </label>
+            <div>
+                <small *ngIf="formControls.zipCode.error" class="error-message">Zip code is invalid</small>
+                <label [class.invalid]="formControls.zipCode.error">
+                    <small>Zip Code</small>
+                    <input type="text" name="zipCode" placeholder="12345" [(ngModel)]="formControls.zipCode.value" #zipCode="ngModel" [ngModelOptions]="{updateOn: 'blur'}" (ngModelChange)="validateInput($event, 'zipCode')" required maxlength="5" pattern="^([0-9]{5})$">
+                </label>
+            </div>
+        </div>
+    </div>
+    <div class="form-payment">
+        <h4>Payment Details</h4>
+        <div>
+            <small *ngIf="formControls.ccNumber.error" class="error-message">Credit card number is invalid</small>
+            <label [class.invalid]="formControls.ccNumber.error">
+                <small>Credit Card Number</small>
+                <input type="text" name="ccNumber" placeholder="5555-5555-5555-5555" [(ngModel)]="formControls.ccNumber.value" #ccNumber="ngModel" [ngModelOptions]="{updateOn: 'blur'}" (ngModelChange)="validateInput($event, 'ccNumber')" required maxlength="19" pattern="^([0-9]{4}[-.]?[0-9]{4}[-.]?[0-9]{4}[-.]?[0-9]{4})$">
+            </label>
+        </div>
+        <div class="input-group">
+            <div>
+                <small *ngIf="formControls.ccCode.error" class="error-message">Security code is invalid</small>
+                <label [class.invalid]="formControls.ccCode.error">
+                    <small>Security Code</small>
+                    <input type="text" name="ccCode" placeholder="***" [(ngModel)]="formControls.ccCode.value" #ccCode="ngModel" [ngModelOptions]="{updateOn: 'blur'}" (ngModelChange)="validateInput($event, 'ccCode')" required maxlength="3" pattern="^([0-9]{3})$">
+                </label>
+            </div>
+            <div>
+                <small *ngIf="formControls.ccDate.error" class="error-message">Expiration date is invalid</small>
+                <label [class.invalid]="formControls.ccDate.error">
+                    <small>Expiration Date</small>
+                    <input type="text" name="ccDate" placeholder="MM/YY" [(ngModel)]="formControls.ccDate.value" #ccDate="ngModel" [ngModelOptions]="{updateOn: 'blur'}" (ngModelChange)="validateInput($event, 'ccDate')" required maxlength="5" pattern="^(0[1-9]|1[0-2])\/?([0-9]{2})$">
+                </label>
+            </div>
+        </div>
+    </div>
+    <div class="form-total">
+        <span>Order Total</span>
+        <span>{{orderTotal | currency}}</span>
+    </div>
+    <input type="submit" value="Pay" [disabled]="form.invalid">
+</form>

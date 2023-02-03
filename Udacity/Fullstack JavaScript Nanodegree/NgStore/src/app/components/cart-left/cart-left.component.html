@@ -1,0 +1,17 @@
+<ul>
+    <li *ngFor="let orderProduct of orderProducts">
+        <div class="image-container">
+            <img src="{{orderProduct.product.url_thumb}}">
+        </div>
+        <div class="details-container">
+            <app-cart-left-form
+                [orderProduct]="orderProduct"
+                (quantityChange)="handleQuantityChange($event)"
+            ></app-cart-left-form>
+            <div>
+                <span>{{(orderProduct.product.price * orderProduct.quantity) | currency}}</span>
+                <button (click)="handleRemoveClick(orderProduct.product)">Remove</button>
+            </div>
+        </div>
+    </li>
+</ul>

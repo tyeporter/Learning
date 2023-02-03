@@ -1,0 +1,25 @@
+{
+    "root": true,
+    "plugins": [
+        "@typescript-eslint",
+        "prettier"
+    ],
+    "extends": [
+        "eslint:recommended",
+        "plugin:@typescript-eslint/recommended",
+        "prettier"
+    ],
+    "rules": {
+        "@typescript-eslint/no-use-before-define": ["error", { "functions": true, "classes": true }],
+        "@typescript-eslint/no-var-requires": "error",
+        "@typescript-eslint/prefer-as-const": "error",
+        "@typescript-eslint/indent": ["error", 4]
+    },
+    "parserOptions": {
+        "ecmaVersion": 2017
+    },
+    "env": {
+        "node": true,
+        "es6": true
+    }
+}

@@ -1,0 +1,8 @@
+section {
+    text-align: center;
+}
+
+.order-customer,
+.order-total {
+    font-weight: 700;
+}
