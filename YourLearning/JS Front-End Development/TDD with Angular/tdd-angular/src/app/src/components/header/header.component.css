@@ -1,0 +1,9 @@
+#navBarSearchForm {
+    width: auto !important;
+}
+
+#navBarSearchForm input[type=search] {
+    width: auto !important;
+    max-width: 500px !important;
+}
+

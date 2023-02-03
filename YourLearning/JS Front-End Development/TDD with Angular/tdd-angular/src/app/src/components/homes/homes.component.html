@@ -1,0 +1,15 @@
+<div class="container-fluid">
+    <h1 class="fs-1 fw-bold my-4">Homes</h1>
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 row-cols-xl-6 g-4">
+        <div class="col" data-test="home" *ngFor="let home of homes$ | async">
+            <div class="card">
+                <div class="card-img-top" data-test="image"><img class="w-100" src="{{home.image}}"></div>
+                <div class="card-body">
+                    <h3 class="card-title fs-4 fw-bold" data-test="title">{{home.title}}</h3>
+                    <p class="card-text" data-test="location">{{home.location | uppercase}}</p>
+                    <button class="btn btn-primary" data-test="book-btn" (click)="openDialog(home)">Book</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
