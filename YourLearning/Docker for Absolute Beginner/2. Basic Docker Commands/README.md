@@ -28,7 +28,7 @@
 ## Removing Images
 
 `docker rmi <image_name>` - Removes image
-  - **WARNING**: In order to delete an images, we must delete all dependent containers
+  - **WARNING**: In order to delete an image, we must delete all dependent containers
 
 ## Pulling Images
 
@@ -58,8 +58,8 @@
 
 ----
 
-## Pracical Examples
+## Practical Examples
 
-`docker run centos` - Download and runs centos image, immediately stops because it's a base image
-`docker run -it centos bash` - Run, login, and run bash in centos container 
-`exit` - Exit container
+- `docker run centos` - Download and runs centos image, immediately stops because it's a base image
+- `docker run -it centos bash` - Run, login, and run bash in centos container 
+- `exit` - Exit logged in container
